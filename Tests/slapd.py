@@ -58,10 +58,11 @@ class Slapd:
     PATH_TMPDIR = "/var/tmp/python-ldap-test"  
     PATH_SBINDIR = "/usr/sbin"
     PATH_BINDIR = "/usr/bin"
-    PATH_SCHEMA_CORE = "/etc/ldap/schema/core.schema"
+    PATH_SCHEMA_CORE = "/etc/openldap/schema/core.schema"
     PATH_LDAPADD = os.path.join(PATH_BINDIR, "ldapadd")
     PATH_LDAPSEARCH = os.path.join(PATH_BINDIR, "ldapsearch")
     PATH_SLAPD = os.path.join(PATH_SBINDIR, "slapd")
+    PATH_SLAPD = "/usr/lib64/openldap/slapd"
     PATH_SLAPTEST = os.path.join(PATH_SBINDIR, "slaptest")
 
     # TODO add paths for other OSs
