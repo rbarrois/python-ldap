@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: python-ldap
-Version: 2.4.14-py23
+Version: 2.4.14-future2
 Summary: Python modules for implementing LDAP clients
 Home-page: http://www.python-ldap.org/
 Author: python-ldap project
