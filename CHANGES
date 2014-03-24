@@ -1,4 +1,25 @@
 ----------------------------------------------------------------
+Released 2.4.15 2014-03-24
+
+Changes since 2.4.14:
+
+Lib/
+* Added missing modules ldap.controls.openldap and
+  ldap.controls.pwdpolicy to setup.py
+* Added missing imports to ldap.controls.pwdpolicy
+* Fixed ldap.controls.pwdpolicy.decodeControlValue() to decode
+  string of digits
+* Support for X-SUBST in schema element class LDAPSyntax
+* Support for X-ORDERED and X-ORIGIN in schema element class AttributeType
+* ldapurl: New scope 'subordinates' defined in 
+  draft-sermersheim-ldap-subordinate-scope
+
+Modules/
+* New constant ldap.SCOPE_SUBORDINATE derived from ldap.h for 
+  draft-sermersheim-ldap-subordinate-scope
+* Fixed constant ldap.sasl.CB_GETREALM (thanks to Martin Pfeifer)
+
+----------------------------------------------------------------
 Released 2.4.14 2014-01-31
 
 Changes since 2.4.13:
@@ -6,7 +27,7 @@ Changes since 2.4.13:
 Lib/
 * Added ldap.controls.openldap.SearchNoOpControl
 * New method ldap.async.AsyncSearchHandler.afterFirstResult()
-  for doing something right after successfully receiving but before 
+  for doing something right after successfully receiving but before
   processing first result
 * Better log data written when invoking ldap.LDAPLock.acquire() and
   ldap.LDAPLock.release()
@@ -1076,4 +1097,4 @@ Released 2.0.0pre02 2002-02-01
 ----------------------------------------------------------------
 Released 1.10alpha3 2000-09-19
 
-$Id: CHANGES,v 1.310 2014/01/31 17:21:15 stroeder Exp $
+$Id: CHANGES,v 1.318 2014/03/24 10:22:47 stroeder Exp $
