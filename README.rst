@@ -1,9 +1,16 @@
 ---------------------------------------
-python-ldap: LDAP client API for Python
+python-ldap: LDAP client API for Python 
 ---------------------------------------
 
-.. warning:: This repository is now obsolete.
-             Development of the Py3-compatible python-ldap fork is now at https://github.com/pyldap/pyldap
+Warning
+=======
+
+This repository is now **obsolete**.
+Development of the Py3-compatible python-ldap fork is now at https://github.com/pyldap/pyldap
+
+
+Legacy readme
+=============
 
 What is python-ldap?
 
